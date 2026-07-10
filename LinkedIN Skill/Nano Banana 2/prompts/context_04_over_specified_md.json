@@ -1,0 +1,77 @@
+{
+  "_brand": {
+    "company": "EvolveX Technologies Pvt. Ltd.",
+    "domain": "https://evolvextechnologies.com/",
+    "linkedin": "https://www.linkedin.com/company/evolvextechnologies/",
+    "positioning": "AI Automation & RPA Solutions",
+    "mission": "Unlock limitless potential and lead the future with innovative technologies.",
+    "tagline": "Powered by People, Driven by Innovation.",
+    "services": [
+      "Robotic Process Automation",
+      "RPA Consulting & Integration",
+      "Agentic AI Automation",
+      "Intelligent Document Processing",
+      "CRM / ERP Automation"
+    ],
+    "industries": [
+      "Banking & Finance",
+      "Healthcare",
+      "Real Estate",
+      "Insurance",
+      "Logistics",
+      "Media & Entertainment"
+    ]
+  },
+
+  "_logo": {
+    "source_svg": "…/Nano Banana 2/assets/logo/evolvex-logo.svg",
+    "raster_4x": "…/Nano Banana 2/assets/logo/evolvex-logo@4x.png",
+    "raster_2x": "…/Nano Banana 2/assets/logo/evolvex-logo@2x.png",
+    "placement": "bottom-right, seated on a light rounded chip (#f5f1f5 at ~92% opacity) for contrast against the dark background",
+    "wordmark_color": "#9E166A",
+    "never": [
+      "Do not recolor the logo",
+      "Do not place a second logo or add 'EvolveX' text elsewhere in the generated content",
+      "Do not remove or cover the light chip behind the logo"
+    ]
+  },
+
+  "_color_palette": {
+    "note": "All colors are lifted directly from the EvolveX logo gradient — do not substitute unrelated brand colors (e.g. teal, blue, cyan).",
+    "primary_orange": "#F1600A",
+    "secondary_magenta": "#EE2A7B",
+    "tertiary_purple": "#6228D7",
+    "quaternary_gold": "#F9CE34",
+    "wordmark_wine": "#9E166A",
+    "icon_deep_wine": "#850152",
+    "background_near_black": "#0b0710",
+    "background_deep_plum": "#2a0f30",
+    "text_white": "#ffffff"
+  },
+
+  "_visual_formats": {
+    "A": {
+      "name": "Bold Text + Person",
+      "when_to_use": "Personal/inspirational posts, culture or team-driven stories, hiring/career content.",
+      "description": "Large title text dominating the upper two-thirds, warm orange glow on the headline, with a photorealistic confident professional (male or female) positioned to one side against the dark plum gradient. Subtle magenta rim-light on the subject.",
+      "accent_usage": "Orange for headline glow, magenta for rim lighting, gold used sparingly for a single highlight accent (e.g. a stat badge)."
+    },
+    "B": {
+      "name": "Tech / Automation Infographic",
+      "when_to_use": "RPA workflow explainers, agentic AI systems, multi-step automation pipelines, 'how it works' posts.",
+      "description": "Connected hexagonal or circular nodes representing workflow steps (e.g. Trigger → Extract → Validate → Act), joined by thin gradient connector lines running orange-to-magenta. Each node has a dark plum interior with a thin pink/purple border glow and a short white label.",
+      "accent_usage": "Magenta/purple for node borders and connectors, orange for the primary flow direction or the 'result' node, gold for a single standout metric (e.g. '75% faster')."
+    },
+    "C": {
+      "name": "Split Layout",
+      "when_to_use": "Contrast or comparison posts (e.g. AUTOMATE vs KEEP HUMAN, before/after, manual vs automated process).",
+      "description": "Two-column layout with a soft vertical divider down the center. Left column typically the 'before' or 'human' side in cooler purple tones; right column the 'after' or 'automated' side in warmer orange tones, echoing the logo's own left-to-right gradient sweep.",
+      "accent_usage": "Purple dominant on the left column, orange dominant on the right column, magenta as the divider/connector color."
+    }
+  },
+
+  "_scene_background_rule": {
+    "gradient": "Near-black plum (#0b0710) in the upper-left, fading through deep magenta-plum (#2a0f30), to a warm orange glow (#F1600A) in the lower-right corner.",
+    "critical": "The inner generated content's background MUST match this gradient so the seam against the template frame is invisible. Never use teal, blue, black, or flat white/light backgrounds."
+  }
+}

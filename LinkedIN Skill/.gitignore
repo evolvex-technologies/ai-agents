@@ -1,0 +1,5 @@
+.env
+.linkedin_token.json
+__pycache__/
+*.pyc
+.venv/
