@@ -32,7 +32,7 @@ CLIENT_ID = os.environ["LINKEDIN_CLIENT_ID"]
 CLIENT_SECRET = os.environ["LINKEDIN_CLIENT_SECRET"]
 REDIRECT_URI = "http://localhost:3000/callback"
 TOKEN_FILE = os.path.join(os.path.dirname(__file__), ".linkedin_token.json")
-SCOPE = "openid profile email w_member_social w_organization_social rw_organization_admin"
+SCOPE = "w_organization_social rw_organization_admin"
 
 AUTH_URL = "https://www.linkedin.com/oauth/v2/authorization"
 TOKEN_URL = "https://www.linkedin.com/oauth/v2/accessToken"

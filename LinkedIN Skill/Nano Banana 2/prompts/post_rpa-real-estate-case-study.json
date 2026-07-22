@@ -1,0 +1,17 @@
+{
+  "prompt": "Use the reference image exactly as the template: a soft light pink-to-peach gradient background, the small orange kicker label 'EVOLVEX · INSIGHT' top-left, the bold magenta heading flanked by orange vertical accent bars, a subheading line below it, a content area in the middle, the bold magenta 'evolvextechnologies.com' bottom-left, and the evolveX logo bottom-right — keep all of these exactly as positioned and styled, do not alter the background gradient, the kicker label, the logo, or the footer URL. Replace the bracketed placeholder heading text '[ Your Heading Goes Here ]' with the real heading 'RPA IN REAL ESTATE' in the same bold magenta font and size, flanked by the same orange accent bars. Replace the bracketed placeholder subheading with: 'How one property management client got 15 hours a week back.' Replace the dashed placeholder rectangle and its 'Add your text, stat, chart or graphic here' text with a clean four-step horizontal workflow graphic, no dashed border: four rounded rectangle cards connected left-to-right by thin orange-to-magenta gradient arrows, each card with a white or very light fill, a thin magenta/orange gradient border, a small icon, and a short dark-purple label — card 1 'New MLS Listing', card 2 'Lease PDF Extracted', card 3 'CRM Synced', card 4 'Portal Updated'. Add a small bold callout badge just below the workflow reading '15 HRS SAVED/WEEK' in white text on a solid magenta-to-orange gradient pill background. Keep all text and icons on-brand and legible against the light background — dark purple or magenta text, not white-on-white.",
+  "negative_prompt": "dark background, black background, plum background, navy background, neon glow frame, rounded glow border, teal tones, blue tones, added logos, added wordmarks, removing the existing logo, removing the footer URL, altering the background gradient, changing the kicker label, low-contrast white text on light background, misspelled text, dashed border remaining after being filled",
+  "image_input": [
+    "https://raw.githubusercontent.com/evolvex-technologies/ai-agents/main/LinkedIN%20Skill/Linkedin%20Post%20Template.png"
+  ],
+  "api_parameters": {
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "output_format": "jpg"
+  },
+  "settings": {
+    "style": "premium tech infographic, preserve reference template frame, clean accent visuals",
+    "lighting": "ambient glow from orange and magenta/pink accents, subtle purple depth, sparing gold highlight on metric badge",
+    "quality": "high detail, sharp legible text, vibrant accents on dark plum-to-orange background"
+  }
+}
