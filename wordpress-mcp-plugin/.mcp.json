@@ -1,0 +1,91 @@
+[
+  {
+    "name": "wordpress-rest-api",
+    "type": "sse",
+    "url": "${WORDPRESS_URL}/wp-json/wp/v2",
+    "auth": {
+      "type": "basic",
+      "username": "${WORDPRESS_USERNAME}",
+      "password": "${WORDPRESS_PASSWORD}"
+    },
+    "description": "WordPress REST API v2 for managing posts, pages, and site content",
+    "tools": [
+      {
+        "name": "get_posts",
+        "description": "Retrieve posts from WordPress with optional filters",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["publish", "draft", "scheduled", "pending"],
+              "description": "Post status filter"
+            },
+            "per_page": {
+              "type": "number",
+              "description": "Number of posts to return (default: 20)"
+            }
+          }
+        }
+      },
+      {
+        "name": "create_post",
+        "description": "Create a new post in WordPress",
+        "inputSchema": {
+          "type": "object",
+          "required": ["title", "content"],
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Post title"
+            },
+            "content": {
+              "type": "string",
+              "description": "Post content"
+            },
+            "status": {
+              "type": "string",
+              "enum": ["draft", "publish", "scheduled"],
+              "description": "Post status (default: draft)"
+            },
+            "categories": {
+              "type": "array",
+              "description": "Array of category IDs"
+            },
+            "excerpt": {
+              "type": "string",
+              "description": "Post excerpt"
+            }
+          }
+        }
+      },
+      {
+        "name": "publish_scheduled_post",
+        "description": "Publish a scheduled post immediately",
+        "inputSchema": {
+          "type": "object",
+          "required": ["post_id"],
+          "properties": {
+            "post_id": {
+              "type": "number",
+              "description": "ID of the scheduled post to publish"
+            }
+          }
+        }
+      },
+      {
+        "name": "get_analytics",
+        "description": "Get post analytics and status counts",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "include_recent_days": {
+              "type": "number",
+              "description": "Include post counts from recent N days"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

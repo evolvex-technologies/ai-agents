@@ -1,0 +1,25 @@
+# Environment variables - NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Build outputs
+dist/
+build/
+*.plugin

@@ -1,0 +1,10 @@
+{
+  "name": "wordpress-rest-api",
+  "version": "0.1.0",
+  "description": "Manage WordPress site content: read/write posts and pages, automate publishing workflows, view analytics",
+  "author": {
+    "name": "Somya"
+  },
+  "keywords": ["wordpress", "cms", "content-management", "rest-api", "publishing"],
+  "mcpServers": "./.mcp.json"
+}
