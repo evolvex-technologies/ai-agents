@@ -89,7 +89,11 @@ def run():
             print(response.text)
         sys.exit(1)
 
-    task_id = result.get("data", {}).get("taskId")
+    if result.get("code") not in (0, 200) or not result.get("data"):
+        print(f"ERROR: API refused the task (code {result.get('code')}): {result.get('msg')}")
+        sys.exit(1)
+
+    task_id = result["data"].get("taskId")
     if not task_id:
         print("ERROR: No taskId returned")
         print(result)

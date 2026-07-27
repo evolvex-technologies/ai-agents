@@ -1,0 +1,13 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Using the reference image as the exact layout template: replace the placeholder heading text '[ Your Heading Goes Here ]' with 'AI + RPA in Media & Entertainment' in the same magenta color, same bold font style, same size and position between the two vertical accent bars. Replace the placeholder line '[ Optional subheading or supporting line goes here ]' with 'From content ops to royalties \u2014 intelligent automation at studio scale' in the same gray color and size. Keep the 'EVOLVEX \u00b7 INSIGHT' label, the light pink background, the evolvextechnologies.com footer text, and the evolvex logo in the bottom-right corner exactly as shown \u2014 do not alter, move, or duplicate them. Fill the large empty content panel in the middle with a clean premium infographic on a soft light mauve background: four hexagonal nodes in a gentle arc, each with a dark plum interior and thin pink/purple glowing border, containing a simple white line icon and short white label: 'Content Ops' (film clapperboard icon), 'Rights & Royalties' (balance scales icon), 'Localization' (globe icon), 'Ad Ops' (bar chart icon). Connect them with thin pink-to-orange gradient lines with small glowing dot endpoints converging into a central glowing orange hexagon labeled 'AI + RPA' in white bold text. Accents: orange #F1600A, magenta #EE2A7B, purple #6228D7, sparing gold #F9CE34. All text must be sharp, correctly spelled, and legible.",
+    "negative_prompt": "placeholder text, bracket characters, '[' or ']' symbols, 'Your Heading Goes Here', 'Optional subheading', misspelled words, blurry text, dark background, teal tones, blue tones, added logos, added wordmarks, altering the footer, altering the logo, clutter",
+    "image_input": [
+      "https://raw.githubusercontent.com/evolvex-technologies/ai-agents/main/LinkedIN%20Skill/Linkedin%20Post%20Template.png"
+    ],
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "output_format": "jpg"
+  }
+}

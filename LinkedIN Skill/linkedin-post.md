@@ -13,9 +13,9 @@ Creates a complete EvolveX Technologies LinkedIn post: the text copy in EvolveX'
 
 | Resource | Path |
 |---|---|
-| Root | `/path/to/linkedin-post-system/` |
+| Root | `/Users/SAM/Downloads/repositories/ai-agents/LinkedIN Skill/` |
 | Nano Banana 2 | `…/Nano Banana 2/` |
-| Template JPG | `…/Linkedin Post Template.jpg` (1200×1500 px) |
+| Template PNG | `…/Linkedin Post Template.png` (1080×1080 px) |
 | Scripts | `…/Nano Banana 2/scripts/` |
 | Prompts | `…/Nano Banana 2/prompts/` |
 | Image output | `…/Nano Banana 2/images/posts/` |
@@ -42,25 +42,22 @@ The Kie.ai API requires a **publicly accessible URL** for `image_input`. The tem
 **Check if the template is already pushed:**
 ```bash
 curl -s -o /dev/null -w "%{http_code}" \
-  "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_PUBLIC_REPO/main/Linkedin%20Post%20Template.jpg"
+  "https://raw.githubusercontent.com/evolvex-technologies/ai-agents/main/LinkedIN%20Skill/Linkedin%20Post%20Template.png"
 ```
 
 If the response is **200**, the template is already there — skip to the URL assignment below.
 
-**If not 200 (first time only):** push the template to GitHub:
+**If not 200 (first time only):** the template lives in this repo — commit and push it:
 ```bash
-cd /tmp && git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_PUBLIC_REPO.git 2>/dev/null || true
-cp "/path/to/linkedin-post-system/Linkedin Post Template.jpg" \
-  /tmp/YOUR_PUBLIC_REPO/
-cd /tmp/YOUR_PUBLIC_REPO
-git add "Linkedin Post Template.jpg"
+cd "/Users/SAM/Downloads/repositories/ai-agents"
+git add "LinkedIN Skill/Linkedin Post Template.png"
 git commit -m "Add LinkedIn post template"
 git push origin main
 ```
 
 **Set the permanent raw URL:**
 ```
-TEMPLATE_URL = https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_PUBLIC_REPO/main/Linkedin%20Post%20Template.jpg
+TEMPLATE_URL = https://raw.githubusercontent.com/evolvex-technologies/ai-agents/main/LinkedIN%20Skill/Linkedin%20Post%20Template.png
 ```
 
 This URL never expires — no re-upload needed on subsequent runs.
@@ -123,10 +120,10 @@ Identify the 3–5 key concepts/elements that need to appear as labeled nodes or
 Use the **Dense Narrative Format** with `image_input`. Nano Banana 2 receives the template as a structural reference and generates the inner content directly inside it.
 
 ### How `image_input` changes the prompt strategy
-- The template provides: outer rounded glow frame, dark purple-to-orange gradient background, EvolveX logo on a light chip (bottom-right)
-- The prompt instructs the model to **fill the empty inner content area** with the visual concept
-- Explicitly tell the model to **preserve** the frame, background gradient, and logo chip exactly
-- **CRITICAL: the scene background inside the card must match the template gradient** — near-black plum (#0b0710) in the upper-left fading through deep magenta-plum (#2a0f30) toward a warm orange glow (#F1600A) in the lower-right. Never introduce a mismatched or flat-color background. When the inner background matches the card, the seam becomes invisible.
+- The template (light pink card, 1080×1080) provides: an `EVOLVEX · INSIGHT` label (top-left), a magenta heading placeholder `[ Your Heading Goes Here ]` between two vertical accent bars, a gray subheading placeholder `[ Optional subheading or supporting line goes here ]`, a large empty content panel in the middle, the `evolvextechnologies.com` footer (bottom-left), and the evolvex logo (bottom-right)
+- The prompt must **explicitly replace both placeholder texts** with the real heading/subheading — instruct "replace the placeholder text '[ Your Heading Goes Here ]' with '<actual heading>' in the same magenta color, font style, size and position", and the same for the subheading. If you only say "keep everything", the placeholders are rendered literally.
+- The prompt instructs the model to **fill the empty content panel** with the visual concept
+- Explicitly tell the model to **preserve** the `EVOLVEX · INSIGHT` label, footer URL, and logo exactly — never alter, move, or duplicate them
 
 ### Mandatory Brand Rules (never skip)
 These colors are lifted directly from the EvolveX logo mark — don't substitute other brand colors.
@@ -141,37 +138,33 @@ These colors are lifted directly from the EvolveX logo mark — don't substitute
 - **Bottom-right corner**: ALWAYS leave the EvolveX logo chip untouched — explicitly tell the model not to alter it
 - **NO extra logos, NO added company text** — only preserve what the template already has
 
-### JSON structure to use (flat format — routes to nano-banana-pro):
+### JSON structure to use (nano-banana-2 `input` format):
 ```json
 {
-  "prompt": "Keep the outer rounded glow frame, background gradient, and EvolveX logo chip in the bottom-right corner exactly as shown in the reference image — do not alter or remove them. Fill the empty inner content area of the card with: <dense narrative of the visual concept — layout, title text, node labels, connecting lines, brand colors>. The scene background must match the card gradient (near-black plum fading to warm orange), not a mismatched color. Primary accent: orange (#F1600A). Secondary accent: magenta/pink (#EE2A7B). Tertiary accent: purple (#6228D7). Sparing gold (#F9CE34) highlights. White sans-serif labels.",
-  "negative_prompt": "white background, light background, pastel colors, blurry text, low contrast, excessive circuit board clutter, teal tones, blue tones, added logos, added wordmarks, removing the existing border, removing the existing logo, altering the background gradient, mismatched scene background",
-  "image_input": [
-    "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_PUBLIC_REPO/main/Linkedin%20Post%20Template.jpg"
-  ],
-  "api_parameters": {
-    "aspect_ratio": "4:5",
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Using the reference image as the exact layout template: replace the placeholder heading text '[ Your Heading Goes Here ]' with '<ACTUAL HEADING>' in the same magenta color, same bold font style, same size and position between the two vertical accent bars. Replace the placeholder line '[ Optional subheading or supporting line goes here ]' with '<ACTUAL SUBHEADING>' in the same gray color and size. Keep the 'EVOLVEX · INSIGHT' label, the light pink background, the evolvextechnologies.com footer text, and the evolvex logo in the bottom-right corner exactly as shown — do not alter, move, or duplicate them. Fill the large empty content panel in the middle with: <dense narrative of the visual concept — nodes, labels, icons, connecting lines>. Accents: orange #F1600A, magenta #EE2A7B, purple #6228D7, sparing gold #F9CE34. All text must be sharp, correctly spelled, and legible.",
+    "negative_prompt": "placeholder text, bracket characters, '[' or ']' symbols, 'Your Heading Goes Here', 'Optional subheading', misspelled words, blurry text, dark background, teal tones, blue tones, added logos, added wordmarks, altering the footer, altering the logo, clutter",
+    "image_input": [
+      "https://raw.githubusercontent.com/evolvex-technologies/ai-agents/main/LinkedIN%20Skill/Linkedin%20Post%20Template.png"
+    ],
+    "aspect_ratio": "1:1",
     "resolution": "1K",
     "output_format": "jpg"
-  },
-  "settings": {
-    "style": "premium tech infographic, preserve reference template frame, clean accent visuals",
-    "lighting": "ambient glow from orange and magenta/pink accents, subtle purple depth, sparing gold highlights",
-    "quality": "high detail, sharp legible text, vibrant accents on dark plum-to-orange background"
   }
 }
 ```
 
-**Note:** No `"model"` key, no `"input"` wrapper. The flat structure with `api_parameters` routes automatically to `nano-banana-pro`. Never use the `"input": {}` wrapper — it routes to nano-banana-2 which produces a flat overlaid look.
+**Note:** Use the `"model": "nano-banana-2"` + `"input": {}` wrapper format exactly as shown — the API key is authorized for `nano-banana-2` only (`nano-banana-pro` returns 401 "not authorized to use this model"). Verified working 2026-07-27.
 
 ---
 
 ## STEP 6 — Ensure .env is Configured
 
-Check if `/path/to/linkedin-post-system/Nano Banana 2/.env` exists.
+Check if `/Users/SAM/Downloads/repositories/ai-agents/LinkedIN Skill/Nano Banana 2/.env` exists.
 
 **If it does NOT exist:**
-1. Read `/path/to/linkedin-post-system/.env`
+1. Read `/Users/SAM/Downloads/repositories/ai-agents/LinkedIN Skill/.env`
 2. Find the line starting with `Kie_AI_API_KEY=` and extract the value
 3. Create `Nano Banana 2/.env` with exactly this content:
    ```
@@ -191,16 +184,16 @@ Check if `/path/to/linkedin-post-system/Nano Banana 2/.env` exists.
 
 3. Create output directory if needed:
    ```bash
-   mkdir -p "/path/to/linkedin-post-system/Nano Banana 2/images/posts"
+   mkdir -p "/Users/SAM/Downloads/repositories/ai-agents/LinkedIN Skill/Nano Banana 2/images/posts"
    ```
 
 4. Generate:
    ```bash
-   cd "/path/to/linkedin-post-system/Nano Banana 2"
+   cd "/Users/SAM/Downloads/repositories/ai-agents/LinkedIN Skill/Nano Banana 2"
    python3 scripts/generate_kie.py \
      "prompts/post_<slug>.json" \
      "images/posts/<slug>_final.jpg" \
-     "4:5"
+     "1:1"
    ```
 
 ---
@@ -215,7 +208,7 @@ Show the full post text, formatted exactly as it would appear on LinkedIn (blank
 ### 2. Final Visual
 Read and display:
 ```
-/path/to/linkedin-post-system/Nano Banana 2/images/posts/<slug>_final.jpg
+/Users/SAM/Downloads/repositories/ai-agents/LinkedIN Skill/Nano Banana 2/images/posts/<slug>_final.jpg
 ```
 
 ### 3. File Locations
@@ -233,19 +226,19 @@ Read and display:
 
 Once approved, post using the Python script at:
 ```
-/path/to/linkedin-post-system/linkedin_post.py
+/Users/SAM/Downloads/repositories/ai-agents/LinkedIN Skill/linkedin_post.py
 ```
 
 **Text-only post:**
 ```bash
-python3 "/path/to/linkedin-post-system/linkedin_post.py" "FULL POST TEXT HERE"
+python3 "/Users/SAM/Downloads/repositories/ai-agents/LinkedIN Skill/linkedin_post.py" "FULL POST TEXT HERE"
 ```
 
 **Post with image** — pass the image path as a second argument:
 ```bash
-python3 "/path/to/linkedin-post-system/linkedin_post.py" \
+python3 "/Users/SAM/Downloads/repositories/ai-agents/LinkedIN Skill/linkedin_post.py" \
   "FULL POST TEXT HERE" \
-  "/path/to/linkedin-post-system/Nano Banana 2/images/posts/<slug>_final.jpg"
+  "/Users/SAM/Downloads/repositories/ai-agents/LinkedIN Skill/Nano Banana 2/images/posts/<slug>_final.jpg"
 ```
 
 **First-time / token expired:** The script opens a browser for LinkedIn OAuth and saves the token to `.linkedin_token.json` next to the script. All subsequent runs reuse the saved token silently.
