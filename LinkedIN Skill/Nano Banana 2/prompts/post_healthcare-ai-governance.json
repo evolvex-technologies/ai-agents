@@ -1,0 +1,13 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Using the reference image as the exact layout template: replace the placeholder heading text '[ Your Heading Goes Here ]' with the real heading text ONLY, no brackets, no square bracket characters at all: AGENT RECOMMENDS. HUMAN DECIDES. — render it in the same magenta color, same bold font style, same size and position between the two vertical accent bars, with NO '[' or ']' characters anywhere near it. Replace the placeholder line '[ Optional subheading or supporting line goes here ]' with the real subheading text ONLY, no brackets: Inside a hospital cost-governance workflow built with agentic AI — in the same gray color and size, with no bracket characters. Keep the 'EVOLVEX · INSIGHT' label, the light pink background, the evolvextechnologies.com footer text, and the evolvex logo in the bottom-right corner exactly as shown — do not alter, move, or duplicate them. Fill the large empty content panel in the middle with a clean split-layout infographic on a soft light background with a thin vertical divider down the center — the content panel must have NO dashed border and NO outline box around it, just the graphic floating directly on the card's background: left column headed 'THE AGENT' in cooler purple tones with three short rows each holding a small white line icon and label — 'Analyzes OR spend data' (magnifying glass icon), 'Flags cost variance' (flag icon), 'Drafts governance report' (document icon); right column headed 'THE HUMAN' in warm orange tones with three short rows — 'Reviews findings' (eye icon), 'Owns the decision' (person icon), 'Approves the change' (checkmark icon). The central divider is a thin gradient line from purple to orange with a small glowing dot at the midpoint where a tiny handoff arrow icon sits pointing left-to-right. Accents: orange #F1600A, magenta #EE2A7B, purple #6228D7, sparing gold #F9CE34. All text must be sharp, correctly spelled, and legible.",
+    "negative_prompt": "placeholder text, bracket characters, square brackets, '[' or ']' symbols, literal brackets around heading or subheading text, 'Your Heading Goes Here', 'Optional subheading', dashed border, dashed rectangle, dotted border box around content panel, misspelled words, blurry text, dark background, teal tones, blue tones, added logos, added wordmarks, altering the footer, altering the logo, clutter",
+    "image_input": [
+      "https://raw.githubusercontent.com/evolvex-technologies/ai-agents/main/LinkedIN%20Skill/Linkedin%20Post%20Template.png"
+    ],
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "output_format": "jpg"
+  }
+}

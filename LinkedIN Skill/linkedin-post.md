@@ -85,6 +85,7 @@ Write a LinkedIn post in EvolveX Technologies' brand voice — the collective vo
 - Maximum 2 emojis in the entire post
 - No bullet lists, UNLESS the post is a "playbook" format — in that case numbered items are fine
 - Never use: "synergy", "leverage", "innovative", "cutting-edge", "unlock", "game-changer"
+- Never use em dashes (—). Use a comma, period, or "and" instead.
 
 ### Core Themes (content pillars)
 - Robotic Process Automation (RPA) capabilities and real-world use cases
