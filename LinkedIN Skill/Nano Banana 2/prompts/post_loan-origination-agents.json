@@ -1,0 +1,13 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Using the reference image as the exact layout template: replace the placeholder heading text '[ Your Heading Goes Here ]' with the plain text Loan Origination Agents (no square brackets, no '[' or ']' characters) in the same magenta color, same bold font style, same size and position between the two vertical accent bars. Replace the placeholder line '[ Optional subheading or supporting line goes here ]' with the plain text Case study: from 5-7 days to under 24 hours — completely remove the square bracket characters '[' and ']', they must not appear anywhere in the subheading — in the same gray color and size. Keep the 'EVOLVEX · INSIGHT' label, the light pink background, the evolvextechnologies.com footer text, and the evolvex logo in the bottom-right corner exactly as shown — do not alter, move, or duplicate them. Fill the large empty content panel in the middle with a clean premium infographic on a soft light mauve background showing a left-to-right process flow with four hexagonal nodes connected by a thin pink-to-orange gradient line with glowing dot connectors: first hexagon 'Documents In' (inbox/document icon), second hexagon 'Verify Income' (magnifying glass over paystub icon), third hexagon 'Flag Exceptions' (warning triangle icon), fourth hexagon 'Ready for Underwriting' (checkmark icon), each with a dark plum interior and thin pink/purple glowing border and short white label beneath the icon. Below the flow, add a small bold stat callout in orange text: '5-7 days -> <24 hours'. Accents: orange #F1600A, magenta #EE2A7B, purple #6228D7, sparing gold #F9CE34. All text must be sharp, correctly spelled, and legible.",
+    "negative_prompt": "placeholder text, square bracket characters, literal '[' character, literal ']' character, bracketed text, 'Your Heading Goes Here', 'Optional subheading', misspelled words, blurry text, dark background, teal tones, blue tones, added logos, added wordmarks, altering the footer, altering the logo, clutter",
+    "image_input": [
+      "https://raw.githubusercontent.com/evolvex-technologies/ai-agents/main/LinkedIN%20Skill/Linkedin%20Post%20Template.png"
+    ],
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "output_format": "jpg"
+  }
+}
