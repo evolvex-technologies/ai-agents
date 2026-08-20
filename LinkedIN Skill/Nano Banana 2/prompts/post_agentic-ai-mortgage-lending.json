@@ -1,0 +1,13 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Using the reference image as the exact layout template: replace the placeholder heading text '[ Your Heading Goes Here ]' with the plain text Agentic AI in Mortgage Lending (no square brackets, no '[' or ']' characters) in the same magenta color, same bold font style, same size and position between the two vertical accent bars. Replace the placeholder line '[ Optional subheading or supporting line goes here ]' with the plain text Beyond workflow automation, completely remove the square bracket characters, they must not appear anywhere in the subheading, in the same gray color and size. Keep the 'EVOLVEX · INSIGHT' label, the light pink background, the evolvextechnologies.com footer text, and the evolvex logo in the bottom-right corner exactly as shown, do not alter, move, or duplicate them. Fill the large empty content panel in the middle with a two-column split comparison on a soft light mauve background, divided by a thin vertical pink-to-orange gradient line down the center. Left column header in muted gray bold text 'WORKFLOW AUTOMATION', below it three small gray rounded rectangle chips stacked vertically each with a simple outline icon and short label: 'Routes documents', 'Fixed steps', 'Scheduled callbacks'. Right column header in bold magenta text 'AGENTIC AI', below it three hexagonal chips stacked vertically, each with a dark plum interior, thin pink and orange glowing border, a simple white line icon, and short white label: 'Judges completeness', 'Flags issues early', 'Answers in real time'. The right column should look distinctly more vivid and premium than the muted left column to show the contrast. Accents: orange #F1600A, magenta #EE2A7B, purple #6228D7, sparing gold #F9CE34. All text must be sharp, correctly spelled, and legible.",
+    "negative_prompt": "placeholder text, square bracket characters, literal '[' character, literal ']' character, bracketed text, 'Your Heading Goes Here', 'Optional subheading', misspelled words, blurry text, dark overall background, teal tones, blue tones, added logos, added wordmarks, altering the footer, altering the logo, clutter, equal visual weight on both columns",
+    "image_input": [
+      "https://raw.githubusercontent.com/evolvex-technologies/ai-agents/main/LinkedIN%20Skill/Linkedin%20Post%20Template.png"
+    ],
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "output_format": "jpg"
+  }
+}

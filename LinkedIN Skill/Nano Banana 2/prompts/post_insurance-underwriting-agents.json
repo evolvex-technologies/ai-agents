@@ -1,0 +1,13 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Using the reference image as the exact layout template: replace the placeholder heading text '[ Your Heading Goes Here ]' with the plain text Underwriting Submission Agents (no square brackets, no '[' or ']' characters) in the same magenta color, same bold font style, same size and position between the two vertical accent bars. Replace the placeholder line '[ Optional subheading or supporting line goes here ]' with the plain text Clearing the noise before it reaches the underwriter, completely remove the square bracket characters, they must not appear anywhere in the subheading, in the same gray color and size. Keep the 'EVOLVEX · INSIGHT' label, the light pink background, the evolvextechnologies.com footer text, and the evolvex logo in the bottom-right corner exactly as shown, do not alter, move, or duplicate them. Fill the large empty content panel in the middle with a clean premium branching flow diagram on a soft light mauve background. On the left, one hexagonal node with a dark plum interior, thin pink and orange glowing border, a simple white document icon, and the white label 'Broker Submission'. A thin pink-to-orange gradient line with small glowing dot connectors runs right to a second hexagonal node labeled 'Extract and Verify' with a magnifying glass icon, then to a third central hexagonal node labeled 'Triage' with a branching arrows icon. From the Triage node the line splits into two diverging branches: the upper branch ends in a hexagonal node with an orange glow labeled 'Auto Quote' with a lightning bolt icon, the lower branch ends in a hexagonal node with a purple glow labeled 'Human Underwriter' with a person icon. Below the diagram, a single bold stat line in orange text: '32 min to 1 min'. Accents: orange #F1600A, magenta #EE2A7B, purple #6228D7, sparing gold #F9CE34. All text must be sharp, correctly spelled, and legible.",
+    "negative_prompt": "placeholder text, square bracket characters, literal '[' character, literal ']' character, bracketed text, 'Your Heading Goes Here', 'Optional subheading', misspelled words, blurry text, dark overall background, teal tones, blue tones, added logos, added wordmarks, altering the footer, altering the logo, clutter, overlapping text",
+    "image_input": [
+      "https://raw.githubusercontent.com/evolvex-technologies/ai-agents/main/LinkedIN%20Skill/Linkedin%20Post%20Template.png"
+    ],
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "output_format": "jpg"
+  }
+}
