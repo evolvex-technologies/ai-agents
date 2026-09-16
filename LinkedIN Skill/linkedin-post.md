@@ -70,7 +70,7 @@ Write a LinkedIn post in EvolveX Technologies' brand voice — the collective vo
 
 ### Structure (in order)
 1. **Hook** (1 sentence) — Bold, direct, sometimes provocative. Can be a statement or question. Optional single emoji at the end.
-2. **Relatability bridge** (1–2 sentences) — "You know the drill." or a common assumption/frustration the reader (an ops leader, founder, or department head) has about manual, repetitive work.
+2. **Relatability bridge** (1–2 sentences) — a common assumption/frustration the reader (an ops leader, founder, or department head) has about manual, repetitive work. NEVER open with "You know the drill." — that phrase is banned.
 3. **Client/implementation story** (3–5 sentences) — Open with "We recently…" or "One of our clients was stuck with…". A specific, concrete example grounded in real automation work (RPA rollout, agentic AI workflow, document processing, CRM/ERP integration). Real detail, not generic.
 4. **Revelation** (1–2 sentences) — "Here's where it got interesting…" or describe the measurable result (time saved, error rate down, hours reclaimed).
 5. **Broader lesson** (2–3 sentences) — What does this mean for the reader's business? Draw the bigger implication about automation done right.
@@ -81,11 +81,14 @@ Write a LinkedIn post in EvolveX Technologies' brand voice — the collective vo
 - Short paragraphs (1–3 sentences each), separated by a blank line
 - Heavy use of "we" and "you" — personal, never corporate-speak
 - Enthusiastic but grounded — never hype-y, never "game-changing" or "revolutionary"
-- 180–280 words total
-- Maximum 2 emojis in the entire post
+- 180–200 words total. Shorter reads better than longer; never exceed 250.
+- NO emojis anywhere in the post
+- Simple, plain English a general LinkedIn audience understands, not industry insiders. Avoid unexplained jargon (DSO, cash application, remittance data, working capital, three-way matching); drop the term or say it plainly.
+- Must read like a human wrote it, not like generated marketing copy
 - No bullet lists, UNLESS the post is a "playbook" format — in that case numbered items are fine
 - Never use: "synergy", "leverage", "innovative", "cutting-edge", "unlock", "game-changer"
 - Never use em dashes (—). Use a comma, period, or "and" instead.
+- Never open with "You know the drill."
 
 ### Core Themes (content pillars)
 - Robotic Process Automation (RPA) capabilities and real-world use cases
