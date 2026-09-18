@@ -1,0 +1,10 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Flat vector illustration for a website hero, in a clean modern corporate flat-design style with soft rounded shapes, subtle grain texture on the large background blob, and simple geometric characters. Scene: on the left, a messy pile of different documents flowing into the picture: a scanned paper form with checkboxes, a handwritten note page with wavy pen lines, an envelope with an email letter, a stapled contract, a paper invoice with a table, and a small photo of a receipt taken on a phone. They travel along a dotted periwinkle path into the centre, where a friendly rounded AI extraction machine in white and periwinkle blue with a glowing scanning beam and a small magnifying-glass lens reads them. Out of the right side of the machine come neat, orderly items: clean floating data cards with rows of blocks, a tidy spreadsheet table with green check marks, and a database cylinder, landing on a large dashboard screen where a smiling data analyst in a mustard-yellow sweater points at a bar chart. A yellow lightbulb with sparkles and two pale yellow gears float in the background sky. Background: one large soft light-blue organic blob on a pure white background with a few flat pale clouds. Palette: periwinkle blue #4A72D8, pale blue #C9DDF6, very light blue #E7F0FB, mustard yellow #F5B84A, soft green #3BB273, dark navy line accents #1F2A44, white. Airy, balanced composition, wide 16:9 framing, clean white space around the blob, clear visual story of chaos on the left becoming order on the right. Strictly no text, no words, no letters, no numbers anywhere; every document, card and screen shows only abstract lines, bars and blocks.",
+    "negative_prompt": "text, words, letters, numbers, labels, captions, typography, logos, watermark, signature, photorealistic, 3D render, dark background, heavy gradients, neon, orange magenta purple brand colors, robot chatbot mascot, clutter, extra limbs, distorted faces, blurry",
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

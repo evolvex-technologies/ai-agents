@@ -1,0 +1,13 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Recreate the reference infographic as a crisp, high-resolution, clean vector-style render, keeping the exact same layout, the same six numbered circles arranged around one large central circle, the same icons, the same colours per circle (blue, purple, teal, green, orange, dark blue), the same curved connecting arrows between the circles, and the same text word for word. Render it on a pure flat white background: the space between and around the circles is plain solid white with absolutely no coloured tint, no pastel patches, no glow, no gradient halos, no drop shadows and no blur; each circle is a solid white disc with a clean coloured ring. Shrink the whole diagram so there is a clear white margin of at least ten percent of the image width on every side and no circle touches the edge. Text must be sharp, correctly spelled and exactly as follows. Central circle: heading 'CRM / ERP AUTOMATION' with the line 'Connect systems. Streamline operations. Drive growth.' Circle 01: 'Capture & Manage Customer Data' with 'Leads, contacts, opportunities, activities'. Circle 02: 'Automate Quote to Order' with 'Create quotes, convert to orders, sync with ERP'. Circle 03: 'Sync Products & Inventory' with 'Keep product, price and stock data updated across systems'. Circle 04: 'Order to Cash Automation' with 'Orders, invoices, payments and renewals'. Circle 05: 'Reporting & Insights' with 'Real-time visibility across CRM and ERP'. Circle 06: 'Two-Way Sync & Integration' with 'Connect CRM and ERP (Salesforce, SAP, HubSpot, NetSuite, Dynamics, Zoho, Odoo, etc.)'. Small numbered badges 01 to 06 on each circle exactly as in the reference. Square composition, generous white margins, crisp edges, print-quality detail.",
+    "negative_prompt": "pastel colour patches between circles, tinted background areas, glow, halo, soft gradient background, drop shadow, blur, bokeh, noise, watermark, logo, misspelled words, garbled letters, missing text, extra text, changed layout, photorealistic, 3D render, dark background, circles cropped at the edge, diagram touching image border",
+    "image_input": [
+      "https://638331.us26.myftpupload.com/wp-content/uploads/2026/09/image-18.png"
+    ],
+    "aspect_ratio": "1:1",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

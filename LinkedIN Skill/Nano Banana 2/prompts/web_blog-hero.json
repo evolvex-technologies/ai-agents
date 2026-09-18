@@ -1,0 +1,10 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Flat vector illustration for a website hero, in a clean modern corporate flat-design style with soft rounded shapes, subtle grain texture on the large background blob, and simple geometric characters. Scene: a smiling writer in a mustard-yellow sweater sits on a rounded periwinkle-blue chair with a laptop, next to a small round table with a coffee cup. Floating around and above them are several overlapping article cards: each card is a white rounded rectangle with a small picture block at the top and a few grey lines of abstract text below, one card carries a small green check badge, another a small heart-and-bookmark icon. Behind the cards a large open book and a pencil, a yellow lightbulb with sparkles, a small gear, a magnifying glass and a paper-plane icon float in the sky. A tiny friendly rounded robot peeks from behind a card. Background: one large soft light-blue organic blob on a pure white background with a few flat pale clouds. Palette: periwinkle blue #4A72D8, pale blue #C9DDF6, very light blue #E7F0FB, mustard yellow #F5B84A, soft green #3BB273, dark navy line accents #1F2A44, white. Airy, balanced composition, roughly 4:3 framing, clean white space around the blob. Strictly no text, no words, no letters, no numbers anywhere; every card, book and screen shows only abstract lines, bars and blocks.",
+    "negative_prompt": "text, words, letters, numbers, labels, captions, typography, logos, watermark, signature, photorealistic, 3D render, dark background, heavy gradients, neon, orange magenta purple brand colors, clutter, extra limbs, distorted faces, blurry",
+    "aspect_ratio": "4:3",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

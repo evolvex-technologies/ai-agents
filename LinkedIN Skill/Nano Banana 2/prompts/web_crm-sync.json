@@ -1,0 +1,10 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Clean flat vector infographic for a website, square composition on a pure white background, corporate flat-design style with soft rounded shapes, matching a light blue and yellow illustration set. Two large rounded-square panels sit side by side: the left panel with a pale blue #E7F0FB fill contains a simple screen icon with a contact card, a deal pipeline of colored bars and a handshake icon, with one large bold navy label 'CRM' beneath it; the right panel with the same pale blue fill contains a screen icon with an orders table, an invoice and a bar chart, with one large bold navy label 'ERP' beneath it. Between the two panels, two thick curved arrows in periwinkle blue form a two-way loop, one pointing right and one pointing left. Along the bottom, a row of four small rounded cards with pale blue fill, each with one simple icon and one short bold navy label: a person card labeled 'Customers', an order slip labeled 'Orders', a price tag with a stock box labeled 'Prices & Stock', an invoice with a coin labeled 'Invoices'. A small yellow spark accent sits near the top. Palette: periwinkle blue #4A72D8, pale blue #C9DDF6, very light blue #E7F0FB, mustard yellow #F5B84A, navy #1F2A44, soft green check marks #3BB273, white. Generous margins, balanced spacing, crisp edges, no connecting dotted lines. The only text in the image is the six labels 'CRM', 'ERP', 'Customers', 'Orders', 'Prices & Stock', 'Invoices', all bold, correctly spelled, with clear padding inside their panels.",
+    "negative_prompt": "dotted lines, extra arrows, paths, text inside icons, lettering on screens, paragraphs, sentences, small text, captions, extra words, misspelled words, garbled letters, cramped labels, text touching edges, watermark, logo, brand logos, photorealistic, 3D render, dark background, heavy gradients, orange magenta purple brand colors, clutter, overlapping elements, blurry",
+    "aspect_ratio": "1:1",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}
