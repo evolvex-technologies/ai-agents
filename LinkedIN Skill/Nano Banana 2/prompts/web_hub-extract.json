@@ -1,0 +1,10 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Square product illustration: a friendly rounded software robot in white and periwinkle blue holding a magnifying glass over a fan of mixed documents (a form with checkboxes, a handwritten note with wavy lines, an email envelope, a contract page), with clean data cards of abstract blocks flowing out to the right into a small database cylinder. Centered composition inside a soft light-blue circular blob, generous margins. Flat vector illustration in a clean modern corporate flat-design style with soft rounded shapes, subtle grain texture on the background blob, simple geometric characters and objects. Palette: periwinkle blue #4A72D8, pale blue #C9DDF6, very light blue #E7F0FB, mustard yellow #F5B84A, soft green #3BB273, dark navy line accents #1F2A44, white. Pure white background outside one soft light-blue organic blob. Absolutely no text, no words, no letters, no numbers, no currency symbols anywhere; documents and screens show only abstract lines, bars and blocks.",
+    "negative_prompt": "text, words, letters, numbers, labels, captions, currency symbols, typography, logos, watermark, signature, ground line, photorealistic, 3D render, dark background, heavy gradients, neon, orange magenta purple brand colors, clutter, extra limbs, distorted faces, blurry",
+    "aspect_ratio": "1:1",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}
